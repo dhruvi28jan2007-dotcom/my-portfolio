@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dewadi Srivastava | B.Tech CSE (AI) | Aspiring Full-Stack & AI Developer</title>
+  <meta name="description" content="Portfolio of Dewadi Srivastava - 1st Year B.Tech CSE (AI) student, passionate about Java, DSA, Full-Stack Web Development, and AI-powered applications." />
+  <meta name="keywords" content="Dewadi Srivastava, Computer Science, AI, Portfolio, Java, DSA, Full Stack Developer, Web Development, Python" />
+  <meta name="author" content="Dewadi Srivastava" />
+
+  <!-- Open Graph / Meta for Social Preview -->
+  <meta property="og:title" content="Dewadi Srivastava | Software & Web Developer Portfolio" />
+  <meta property="og:description" content="First-Year B.Tech CSE (AI) student building foundational excellence in Java, DSA, and modern full-stack web applications." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Dewadi</span>
+        <span class="logo-accent">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#value" class="nav-link">Why Hire</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- Resume Button -->
+        <a href="#contact" class="btn btn-secondary btn-sm nav-cta">Let's Connect</a>
+
+        <!-- Mobile Menu Hamburger -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge-wrapper animate-on-load">
+            <span class="status-indicator"></span>
+            <span class="badge-text">First-Year B.Tech CSE (AI) • Ready for Internships & Projects</span>
+          </div>
+
+          <h1 class="hero-title animate-on-load">
+            Transforming Logic into <br />
+            <span class="gradient-text">Impactful Software</span> &amp; Modern Web Experiences.
+          </h1>
+
+          <p class="hero-subtitle animate-on-load">
+            Hi, I'm <strong class="text-highlight">Dewadi Srivastava</strong>. A computer science undergraduate specializing in Artificial Intelligence. Combining strong <strong>Java &amp; DSA fundamentals</strong>, <strong>Python problem-solving</strong>, and <strong>modern web engineering</strong> to build real-world digital solutions.
+          </p>
+
+          <div class="hero-roles animate-on-load">
+            <span class="role-prefix">I focus on: </span>
+            <span class="role-typewriter" id="typewriterText"></span>
+            <span class="cursor">|</span>
+          </div>
+
+          <div class="hero-actions animate-on-load">
+            <a href="#projects" class="btn btn-primary">
+              <span>Explore My Work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span>Get In Touch</span>
+            </a>
+            <button class="btn btn-ghost" id="copyEmailQuickBtn" title="Copy email address">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span>dewadi.cse@example.com</span>
+            </button>
+          </div>
+
+          <!-- Quick Stat Counters -->
+          <div class="hero-stats animate-on-load">
+            <div class="stat-card">
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">DSA Problems Practiced</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Foundational Projects & Labs</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+              <span class="stat-badge">2026</span>
+              <span class="stat-label">Internship Target Ready</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO INTERACTIVE TERMINAL / CODE WINDOW -->
+        <div class="hero-interactive animate-on-load">
+          <div class="terminal-window">
+            <div class="terminal-header">
+              <div class="window-controls">
+                <span class="control-dot red"></span>
+                <span class="control-dot yellow"></span>
+                <span class="control-dot green"></span>
+              </div>
+              <div class="window-title">dewadi@dev-box: ~ (zsh)</div>
+              <div class="window-tab">developer-profile.json</div>
+            </div>
+            <div class="terminal-body" id="terminalOutput">
+              <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">whoami</span></div>
+              <div class="terminal-line t-response">
+                <span class="t-key">"name"</span>: <span class="t-string">"Dewadi Srivastava"</span>,<br/>
+                <span class="t-key">"degree"</span>: <span class="t-string">"B.Tech Computer Science & Eng. (AI)"</span>,<br/>
+                <span class="t-key">"year"</span>: <span class="t-string">"1st Year Undergrad"</span>,<br/>
+                <span class="t-key">"aspiration"</span>: <span class="t-string">"Full-Stack Web & AI Software Engineer"</span>
+              </div>
+              <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">cat core-focus.txt</span></div>
+              <div class="terminal-line t-response t-highlight-response">
+                ✔ Java &amp; Data Structures (Arrays, LinkedList, Trees, Recursion)<br/>
+                ✔ Python scripting &amp; algorithm development<br/>
+                ✔ Modern semantic HTML5, CSS3 &amp; responsive UI design<br/>
+                ✔ Git, GitHub workflows &amp; team-ready code organization
+              </div>
+              <div class="terminal-line"><span class="t-prompt">$</span> <span class="t-cmd">status --availability</span></div>
+              <div class="terminal-line t-response t-status">
+                <span class="terminal-status-dot"></span> <strong>READY:</strong> Open to summer internships, project collaborations, and junior developer roles!
+              </div>
+              <div class="terminal-line">
+                <span class="t-prompt">$</span> <span class="terminal-input-cursor">_</span>
+              </div>
+            </div>
+            <div class="terminal-footer">
+              <span class="term-tip">💡 Interactive CLI card • Fast learner • Problem solver</span>
+              <button class="terminal-run-btn" id="terminalResetBtn">Re-run profile</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">About Me</span>
+          <h2 class="section-title">Driven by Curiosity, Powered by Fundamentals</h2>
+          <p class="section-desc">
+            As a first-year Computer Science & Engineering student specializing in AI, I believe great software starts with deep algorithmic understanding and relentless curiosity.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text-column">
+            <h3 class="about-headline">
+              Building strong software engineering pillars right from Day 1.
+            </h3>
+            <p>
+              I am currently pursuing my <strong>B.Tech in Computer Science and Engineering with a specialization in Artificial Intelligence</strong>. Rather than jumping straight into surface-level trends, I invest heavily in solid fundamentals: <strong>Java, Object-Oriented Programming (OOP), and Data Structures &amp; Algorithms</strong>.
+            </p>
+            <p>
+              Alongside my college curriculum, I actively explore <strong>Python problem-solving</strong>, <strong>full-stack web architecture</strong>, and <strong>AI-assisted productivity</strong>. My goal is to become an internship-ready developer capable of shipping resilient, clean code and learning any stack required on the job.
+            </p>
+
+            <div class="traits-container">
+              <div class="trait-item">
+                <div class="trait-icon">🎯</div>
+                <div>
+                  <h4>High Velocity Learner</h4>
+                  <p>Quickly assimilates new languages, libraries, and best practices with hands-on labs.</p>
+                </div>
+              </div>
+              <div class="trait-item">
+                <div class="trait-icon">🧠</div>
+                <div>
+                  <h4>Algorithmic Mindset</h4>
+                  <p>Focuses on time and space complexity, edge-case analysis, and structured problem decomposition.</p>
+                </div>
+              </div>
+              <div class="trait-item">
+                <div class="trait-icon">⚡</div>
+                <div>
+                  <h4>Collaborative &amp; Git-Disciplined</h4>
+                  <p>Version control habits, meaningful commits, branch workflows, and clean code documentation.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-cards-column">
+            <div class="glass-card about-highlight-card">
+              <div class="card-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3>Education &amp; Specialization</h3>
+              <p class="card-meta">B.Tech in CSE (Artificial Intelligence)</p>
+              <p class="card-text">
+                Studying core computing principles including discrete math, computer architecture, programming paradigms, and introductory machine learning concepts.
+              </p>
+            </div>
+
+            <div class="glass-card about-highlight-card">
+              <div class="card-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+              </div>
+              <h3>Career Ambition</h3>
+              <p class="card-meta">Full-Stack Web &amp; AI Integration</p>
+              <p class="card-text">
+                Bridging backend logic, databases, and responsive modern user interfaces while integrating AI models to solve real-world productivity challenges.
+              </p>
+            </div>
+
+            <div class="glass-card about-highlight-card">
+              <div class="card-icon-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+              </div>
+              <h3>First-Year Focus</h3>
+              <p class="card-meta">Mastery Through Consistency</p>
+              <p class="card-text">
+                Daily problem solving, hands-on web projects, open-source exploration, and preparing for summer internship interviews.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Technical Toolkit</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-desc">
+            A solid blend of core programming languages, algorithmic problem solving, modern front-end technologies, and developer tooling.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Card 1: Core Programming -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-java">
+                <img src="https://images.openai.com/static-rsc-4/XHbtV7VLO_ZCLUPgqZPuD8NHywyz91js1oPXl8hyRw3t3GbWWZXOKDIaeSU5i7AuIVdlqReIS17sWJslKyXtSTqo94d3rbb3iq_bY-G75DHM8Dsg1h5xU309SoX4yxIXqcIs-vlEd5oU1QaNiSwnoIHU-lH48Zfz2PDjgBZO14I?purpose=inline" alt="Java Original Wordmark Logo" class="brand-badge-img" onerror="this.style.display='none'" />
+                <svg viewBox="0 0 24 24" fill="currentColor" class="fallback-icon">
+                  <path d="M8.86 16.38s-.89.37-.89.74c0 .48 1.48.81 3.51.81 1.95 0 3.86-.33 3.86-.81 0-.37-.89-.74-.89-.74s.66.29.66.52c0 .48-1.57.88-3.63.88-2.06 0-3.63-.4-3.63-.88 0-.23 1.01-.52 1.01-.52zm-1.04 2.21s-.7.34-.7.68c0 .48 1.46.79 3.57.79 1.96 0 3.73-.31 3.73-.79 0-.34-.7-.68-.7-.68s.52.26.52.48c0 .49-1.57.88-3.55.88-2 0-3.57-.39-3.57-.88 0-.22.7-.48.7-.48zm8.7-7.85c.67.66.38 1.37.1 2.05-.28.66-.46.88-.46 1.4 0 .97.91 1.62 1.4 2.19.78.89 1.07 1.83.67 2.76-.56 1.34-2.22 1.87-3.92 2.08.38-.45.69-.97.69-1.56 0-1.46-1.48-2.18-2.18-3.03-.66-.8-.83-1.44-.83-2.13 0-1.74 1.76-2.58 2.37-3.76h2.16zM11.6 3c.71 1.13.43 2.15-.31 3.09-.77.97-1.39 1.82-1.39 3.03 0 1.91 1.68 2.92 2.62 4.15-2.82-.16-4.9-1.34-4.9-2.92 0-1.29 1.25-2.25 1.88-3.41.67-1.22.42-2.58-.22-3.94h2.32zm-3.8 19.34c3.08.19 6.2-.21 9.17-.98-.44.42-.99.8-1.63 1.05-2.28.87-5.08.97-7.54.55-.66-.11-1.3-.29-1.92-.51.62-.05 1.26-.08 1.92-.11z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Java &amp; Algorithms</h3>
+                <span class="cat-badge">Core Foundation</span>
+              </div>
+            </div>
+            <p class="cat-description">
+              Strong focus on Object-Oriented Programming (OOP), class hierarchies, encapsulation, and Data Structures &amp; Algorithms.
+            </p>
+            <ul class="skill-tags">
+              <li>Java SE</li>
+              <li>OOP Concepts</li>
+              <li>Data Structures</li>
+              <li>Algorithms</li>
+              <li>Recursion</li>
+              <li>Time Complexity (Big-O)</li>
+            </ul>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Problem-solving depth</span>
+                <span class="percentage">Active Focus</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-85"></div></div>
+            </div>
+          </div>
+
+          <!-- Card 2: Python & AI -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-python">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M11.914 0C5.82 0 6.2 2.656 6.2 2.656l.008 2.752h5.81v.825H3.94S0 5.76 0 11.879c0 6.12 3.447 5.908 3.447 5.908h2.057v-2.885s-.11-3.447 3.39-3.447h5.787v-.85s.548-3.34-2.767-3.34zm-2.08 1.637a1.018 1.018 0 1 1 0 2.036 1.018 1.018 0 0 1 0-2.036zm2.252 22.363c6.094 0 5.714-2.656 5.714-2.656l-.008-2.752h-5.81v-.825h8.078s3.94.473 3.94-5.646c0-6.12-3.447-5.908-3.447-5.908h-2.057v2.885s.11 3.447-3.39 3.447H6.702v.85s-.548 3.34 2.767 3.34zm2.08-1.637a1.018 1.018 0 1 1 0-2.036 1.018 1.018 0 0 1 0 2.036z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Python &amp; AI Concepts</h3>
+                <span class="cat-badge">Specialization</span>
+              </div>
+            </div>
+            <p class="cat-description">
+              Writing clean, idiomatic Python scripts for practical problem solving, data handling, and AI foundational projects.
+            </p>
+            <ul class="skill-tags">
+              <li>Python 3</li>
+              <li>Problem Solving</li>
+              <li>File I/O</li>
+              <li>Basic Automation</li>
+              <li>AI &amp; ML Intro</li>
+              <li>Math for CS</li>
+            </ul>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Scripting &amp; Logic</span>
+                <span class="percentage">Solid Basis</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-75"></div></div>
+            </div>
+          </div>
+
+          <!-- Card 3: Modern Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-web">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3>Web Development</h3>
+                <span class="cat-badge">Full-Stack Path</span>
+              </div>
+            </div>
+            <p class="cat-description">
+              Creating clean, responsive, and accessible user interfaces with semantic HTML, modern CSS, and JavaScript interactions.
+            </p>
+            <ul class="skill-tags">
+              <li>HTML5 Semantic</li>
+              <li>CSS3 &amp; Flex/Grid</li>
+              <li>Responsive Layouts</li>
+              <li>JavaScript (ES6+)</li>
+              <li>DOM Manipulation</li>
+              <li>Modern UI / UX</li>
+            </ul>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Front-end fluency</span>
+                <span class="percentage">Rapidly Advancing</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-80"></div></div>
+            </div>
+          </div>
+
+          <!-- Card 4: Tools & Version Control -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="cat-icon cat-git">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2.6 10.59L8.38 4.8a1.5 1.5 0 0 1 2.12 0l1.41 1.41-2.42 2.42a2.25 2.25 0 0 0-2.82 2.83l-2.07 2.06A1.5 1.5 0 0 1 2.6 10.59zm18.8 2.82l-5.78 5.79a1.5 1.5 0 0 1-2.12 0l-1.41-1.41 2.42-2.42a2.25 2.25 0 0 0 2.82-2.83l2.07-2.06a1.5 1.5 0 0 1 2 2.93zM8.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm7-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Git &amp; Developer Tools</h3>
+                <span class="cat-badge">Industry Workflow</span>
+              </div>
+            </div>
+            <p class="cat-description">
+              Proficient with version control, collaborative Git branching, command-line operations, and modern developer environments.
+            </p>
+            <ul class="skill-tags">
+              <li>Git &amp; GitHub</li>
+              <li>Terminal / Bash</li>
+              <li>VS Code Setup</li>
+              <li>Markdown Docs</li>
+              <li>Code Debugging</li>
+              <li>Project Structuring</li>
+            </ul>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Developer Workflow</span>
+                <span class="percentage">Team-Ready</span>
+              </div>
+              <div class="progress-bar"><div class="progress-fill fill-85"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Current Learning Roadmap Bar -->
+        <div class="learning-roadmap-card">
+          <div class="roadmap-badge">
+            <span class="pulse-dot"></span>
+            <span>CURRENTLY LEARNING &amp; EXPANDING (2026 ROADMAP)</span>
+          </div>
+          <div class="roadmap-items">
+            <div class="roadmap-item">
+              <span class="rm-num">01</span>
+              <div>
+                <strong>Advanced DSA &amp; LeetCode</strong>
+                <p>Trees, Graphs, Dynamic Programming &amp; Competitive Coding</p>
+              </div>
+            </div>
+            <div class="roadmap-item">
+              <span class="rm-num">02</span>
+              <div>
+                <strong>Full-Stack Architecture</strong>
+                <p>Node.js, Express, RESTful APIs, and React Component Models</p>
+              </div>
+            </div>
+            <div class="roadmap-item">
+              <span class="rm-num">03</span>
+              <div>
+                <strong>Databases &amp; Systems</strong>
+                <p>PostgreSQL, MongoDB, and Database Normalization</p>
+              </div>
+            </div>
+            <div class="roadmap-item">
+              <span class="rm-num">04</span>
+              <div>
+                <strong>AI Integration</strong>
+                <p>LLM APIs, Prompt Engineering &amp; Intelligent Web Agents</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects &amp; Explorations</h2>
+          <p class="section-desc">
+            Practical demonstrations of software engineering principles, algorithm implementation, and front-end development.
+          </p>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="java">Java &amp; DSA</button>
+          <button class="filter-btn" data-filter="web">Full-Stack &amp; Web</button>
+          <button class="filter-btn" data-filter="python">Python &amp; AI</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: DSA Algorithm Visualizer -->
+          <div class="project-card" data-category="java web">
+            <div class="project-image-wrapper">
+              <div class="project-mockup mockup-visualizer">
+                <div class="mockup-bar"></div>
+                <div class="mockup-algo-bars">
+                  <span style="height: 40%"></span>
+                  <span style="height: 75%"></span>
+                  <span style="height: 30%"></span>
+                  <span style="height: 90%" class="highlight-bar"></span>
+                  <span style="height: 60%"></span>
+                  <span style="height: 45%"></span>
+                  <span style="height: 80%" class="highlight-bar-2"></span>
+                  <span style="height: 25%"></span>
+                </div>
+                <span class="mockup-tag">Interactive Demo</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-type">Java Logic + Web UI</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3 class="project-title">Algorithm &amp; Sorting Visualizer</h3>
+              <p class="project-desc">
+                An interactive sorting and searching algorithm visualizer demonstrating Bubble Sort, Merge Sort, and Binary Search with step-by-step state animations and time complexity analysis.
+              </p>
+              <div class="project-tech-stack">
+                <span>Java DSA Concepts</span>
+                <span>JavaScript (ES6)</span>
+                <span>CSS3 Flexbox</span>
+                <span>Algorithms</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dewadisrivastava" target="_blank" rel="noopener" class="project-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#hero" class="project-btn project-btn-preview">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Preview</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2: AI Student Productivity & Study Assistant -->
+          <div class="project-card" data-category="python web">
+            <div class="project-image-wrapper">
+              <div class="project-mockup mockup-ai">
+                <div class="ai-chat-bubble ai-bot">
+                  <span>🤖 Analyzing lecture notes &amp; generating flashcards...</span>
+                </div>
+                <div class="ai-chat-bubble ai-user">
+                  <span>Summarize Big-O Space vs Time complexity.</span>
+                </div>
+                <div class="ai-chat-bubble ai-bot-reply">
+                  <span>✔ Key differences decomposed into table + code example!</span>
+                </div>
+                <span class="mockup-tag">AI Powered</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-type">Python &amp; AI Integration</span>
+                <span class="project-status">In Development</span>
+              </div>
+              <h3 class="project-title">AI Study &amp; Code Assistant</h3>
+              <p class="project-desc">
+                A smart web-based study companion utilizing LLM API integrations and Python back-end scripts to summarize technical documents, explain code bugs, and generate practice quizzes.
+              </p>
+              <div class="project-tech-stack">
+                <span>Python</span>
+                <span>REST API</span>
+                <span>HTML5 / CSS3</span>
+                <span>JSON</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dewadisrivastava" target="_blank" rel="noopener" class="project-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#hero" class="project-btn project-btn-preview">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Live Preview</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3: Student Record & Task Management CLI -->
+          <div class="project-card" data-category="java">
+            <div class="project-image-wrapper">
+              <div class="project-mockup mockup-cli">
+                <div class="cli-mockup-inner">
+                  <span class="cli-line">&gt; java StudentApp --run</span>
+                  <span class="cli-line cli-success">[OK] Initialized Database Connection</span>
+                  <span class="cli-line">&gt; Select [1] Add [2] Search [3] Sort GPA</span>
+                  <span class="cli-line cli-info">&gt;&gt; Found 42 Records sorted via MergeSort</span>
+                </div>
+                <span class="mockup-tag">OOP &amp; Data Structures</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-type">Java SE Core Application</span>
+                <span class="project-status">Completed</span>
+              </div>
+              <h3 class="project-title">Student &amp; Task Management System</h3>
+              <p class="project-desc">
+                An object-oriented CLI system built in Java applying polymorphism, file serialization for persistent storage, binary search tree indexing, and input validation.
+              </p>
+              <div class="project-tech-stack">
+                <span>Java SE</span>
+                <span>OOP</span>
+                <span>File I/O</span>
+                <span>Data Structures</span>
+                <span>Git</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dewadisrivastava" target="_blank" rel="noopener" class="project-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#hero" class="project-btn project-btn-preview">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Documentation</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: High-Performance Developer Portfolio (This Project) -->
+          <div class="project-card" data-category="web">
+            <div class="project-image-wrapper project-banner-wrapper">
+              <img src="https://images.openai.com/static-rsc-4/KcZ5ALQOOaI4dIRLhrTVG9xb_ILrUZTrOf40_DWYuVYEQEQuXd67bFEEMA5VNqb8g0tgQ81OpJyX3oZQwCNYJQ_kr-4d5ee4aR--WIx04a8KtY5hvOTE76IGJpp7xVEuf7M1BOEFglTDUJfsL_7Q--jgRmN5iq-q35C1bO6dlYs?purpose=inline" alt="Professional Front-End Website Development" class="project-feature-banner" onerror="this.style.display='none'" />
+              <div class="project-mockup mockup-web">
+                <div class="web-preview-header">
+                  <span></span><span></span><span></span>
+                </div>
+                <div class="web-preview-content">
+                  <span class="web-preview-title">&lt;Dewadi.dev /&gt;</span>
+                  <span class="web-preview-sub">Fast • Responsive • Dark Theme</span>
+                </div>
+                <span class="mockup-tag">Live Showcase</span>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta-row">
+                <span class="project-type">Modern Responsive Web UI</span>
+                <span class="project-status">Featured</span>
+              </div>
+              <h3 class="project-title">Interactive Personal Portfolio</h3>
+              <p class="project-desc">
+                Engineered from the ground up with semantic HTML5, custom CSS design system, dark/light themes, interactive terminal simulator, and zero third-party framework bloat.
+              </p>
+              <div class="project-tech-stack">
+                <span>HTML5</span>
+                <span>CSS3 Variables</span>
+                <span>Vanilla JS</span>
+                <span>Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/dewadisrivastava" target="_blank" rel="noopener" class="project-btn">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  <span>Source Code</span>
+                </a>
+                <a href="#hero" class="project-btn project-btn-preview">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  <span>Current View</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY HIRE ME / VALUE FOR COMPANIES -->
+    <section class="section value-section" id="value">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Value Proposition</span>
+          <h2 class="section-title">Why Company Owners &amp; Tech Leads Value My Profile</h2>
+          <p class="section-desc">
+            Early-career talent with exceptional work ethic, structured problem-solving habits, and high ROI.
+          </p>
+        </div>
+
+        <div class="value-grid">
+          <div class="value-card">
+            <div class="value-icon">🚀</div>
+            <h3>Steep Learning Curve</h3>
+            <p>
+              I don't just follow tutorials; I master underlying concepts. I adapt quickly to new tech stacks, internal tooling, and engineering workflows without hand-holding.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">📐</div>
+            <h3>Core Engineering Over Shortcuts</h3>
+            <p>
+              By mastering Java, OOP, and Data Structures before hype cycles, I write maintainable, bug-resilient, and computationally efficient code.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🤖</div>
+            <h3>AI Native &amp; Future Ready</h3>
+            <p>
+              As a CSE (AI) major, I understand how to integrate modern AI capabilities to 10x development velocity, automate workflows, and create smarter user experiences.
+            </p>
+          </div>
+
+          <div class="value-card">
+            <div class="value-icon">🤝</div>
+            <h3>Humility &amp; Team Player Mindset</h3>
+            <p>
+              I actively seek feedback, welcome code reviews, communicate proactively, and treat every task with ownership, enthusiasm, and attention to detail.
+            </p>
+          </div>
+        </div>
+
+        <!-- Callout Banner for Recruiters -->
+        <div class="hiring-callout">
+          <div class="callout-content">
+            <span class="callout-badge">INTERNSHIP OPPORTUNITIES</span>
+            <h3>Looking for an energetic, disciplined engineering intern?</h3>
+            <p>
+              I am actively preparing for summer &amp; semester software engineering internships. Let's discuss how I can contribute to your engineering goals.
+            </p>
+          </div>
+          <div class="callout-actions">
+            <a href="#contact" class="btn btn-primary">Schedule a Chat</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY / EDUCATION TIMELINE -->
+    <section class="section journey-section" id="journey">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Academic &amp; Growth Journey</span>
+          <h2 class="section-title">Education &amp; Milestones</h2>
+          <p class="section-desc">My path of disciplined daily progress and continuous skill acquisition.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2026 – Present (Current)</div>
+            <div class="timeline-content glass-card">
+              <h3>B.Tech in Computer Science &amp; Engineering (AI)</h3>
+              <p class="timeline-subtitle">First Year Undergraduate Student</p>
+              <p>
+                Building core competencies in object-oriented programming, discrete mathematics, algorithmic thinking, and AI systems. Active participant in technical societies and coding challenges.
+              </p>
+              <div class="timeline-tags">
+                <span>Java &amp; OOP</span>
+                <span>Data Structures</span>
+                <span>AI Foundations</span>
+                <span>Web Basics</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Phase 1: Foundations</div>
+            <div class="timeline-content glass-card">
+              <h3>Programming Mastery &amp; Problem Solving</h3>
+              <p class="timeline-subtitle">Java, Python &amp; Version Control</p>
+              <p>
+                Mastered core logic formulation in Python and Java. Built command-line utilities, practiced data structure implementations, and established disciplined Git/GitHub habits.
+              </p>
+              <div class="timeline-tags">
+                <span>Problem Solving</span>
+                <span>Git Workflows</span>
+                <span>Terminal / CLI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">Phase 2: Target 2026/2027</div>
+            <div class="timeline-content glass-card">
+              <h3>Full-Stack Web &amp; Applied AI Specialization</h3>
+              <p class="timeline-subtitle">Internship Readiness Target</p>
+              <p>
+                Developing end-to-end full-stack web applications, integrating AI APIs, mastering modern JavaScript/TypeScript, backend frameworks, and deploying live applications.
+              </p>
+              <div class="timeline-tags">
+                <span>Full-Stack Development</span>
+                <span>REST APIs</span>
+                <span>Cloud &amp; Deployment</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-pill">Let's Connect</span>
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-desc">
+            Whether you have an internship opening, a project idea, or simply want to connect with an enthusiastic student developer, my inbox is always open!
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Info & Cards -->
+          <div class="contact-info-column">
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="card-label">Email Me Directly</span>
+                <a href="mailto:dewadi.cse@example.com" class="card-value" id="emailLink">dewadi.cse@example.com</a>
+              </div>
+              <button class="copy-icon-btn" id="copyEmailBtn" aria-label="Copy Email" title="Copy Email">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              </button>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="card-label">GitHub Profile</span>
+                <a href="https://github.com/dewadisrivastava" target="_blank" rel="noopener" class="card-value">github.com/dewadisrivastava</a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="card-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/dewadi-srivastava" target="_blank" rel="noopener" class="card-value">linkedin.com/in/dewadi-srivastava</a>
+              </div>
+            </div>
+
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div class="contact-card-text">
+                <span class="card-label">Location &amp; Availability</span>
+                <span class="card-value">India • Open to Remote &amp; On-Site</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-column">
+            <div class="contact-form-card glass-card">
+              <h3>Send Me a Message</h3>
+              <p class="form-subtext">Have an opportunity or question? Drop me a message and I'll respond within 24 hours.</p>
+
+              <form id="contactForm" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Your Name / Company *</label>
+                  <input type="text" id="name" name="name" required placeholder="e.g. Sarah Jenkins (Tech Recruiter / Founder)" />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Your Email Address *</label>
+                  <input type="email" id="email" name="email" required placeholder="e.g. sarah@company.com" />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject / Purpose</label>
+                  <select id="subject" name="subject">
+                    <option value="Internship Opportunity">🚀 Internship Opportunity</option>
+                    <option value="Software Project Collaboration">💻 Project Collaboration</option>
+                    <option value="Mentorship & Networking">🤝 Networking &amp; Mentorship</option>
+                    <option value="Other Inquiry">💬 General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Your Message *</label>
+                  <textarea id="message" name="message" rows="4" required placeholder="Hello Dewadi, we came across your portfolio and would love to discuss an internship opportunity with our engineering team..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                  <span>Send Message</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+
+                <div class="form-feedback" id="formFeedback"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Dewadi</span>
+          <span class="logo-accent">.dev</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          First-Year B.Tech CSE (AI) • Building software with logic, grit, and curiosity.
+        </p>
+      </div>
+
+      <div class="footer-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#value">Why Hire</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span id="currentYear"></span> Dewadi Srivastava. All rights reserved.</p>
+        <p class="footer-subtext">Engineered with semantic HTML5, modern CSS3 &amp; vanilla JS.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
